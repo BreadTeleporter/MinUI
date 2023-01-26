@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lib/style.css">
+
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="navshow" onclick="togglenav()"></button>
+    <div class="sidenav" id="sidenav">
+        <br><br>
+        <a href="#add" onclick="togglenav()">Add to page</a><br>
+        <a href="#buttons" onclick="togglenav()">Buttons</a><br>
+        <a href="#textboxes" onclick="togglenav()">Text Boxes</a><br>
+        <a href="#sliders" onclick="togglenav()">Sliders</a>
+    </div>
+    <!-- use &lt for < -->
+    <div class="content">
+        <h1 id="add">MinUI</h1>
+        <p>Minimal design for web apps</p>
+        <h2>Add to page:</h2>
+        <div class="code">&ltlink rel="stylesheet" href="https://example.org/example.css"></div>
+        <h2 id="buttons">Button</h2>
+        <button class="min-btn">
+            Click me!
+        </button>
+        <button class="min-btn min-disabled" disabled>
+            Can't click me!
+        </button>
+        <div class="code">
+&ltbutton class="min-btn"><br>
+    Click me!<br>
+&lt/button><br>
+&ltbutton class="min-btn disabled" disabled><br>
+    Can't click me!<br>
+&lt/button>
+        </div>
+        <button class="min-btn min-success">
+            Success!
+        </button>
+        <button class="min-btn min-danger">
+            Danger!
+        </button>
+        <div class="code">
+&ltbutton class="min-btn min-success"><br>
+    Success!<br>
+&lt/button><br>
+&ltbutton class="min-btn min-danger"><br>
+    Danger!<br>
+&lt/button>
+        </div>
+        <button class="min-btn min-btn-loading" disabled>
+            Loading...
+        </button>
+        <div class="code">
+&ltbutton class="min-btn min-btn-loading" disabled>
+    Loading...
+&lt/button>
+        </div>
+        <h2 id="textboxes">Textbox</h2>
+        <input type="text" placeholder="Enter text" class="min-textbox"> <input type="text" disabled placeholder=" Cant Enter text" class="min-textbox">
+        <div class="code">
+&ltinput type="text" placeholder="Enter text" class="min-textbox">
+
+&ltinput type="text" disabled placeholder="Cant Enter text" class="min-textbox">            
+        </div>
+        <input type="password" placeholder="Enter Password" class="min-password"> <input type="password" disabled placeholder="Enter Password" class="min-password">
+        <h2 id="sliders">Sliders</h2>
+        <input type="range" min="1" max="100" value="50" class="min-slider"> <input type="range" min="1" max="100" value="50" class="min-slider" disabled>
+        <div class="code">
+&ltinput type="range" min="1" max="100" value="50" class="min-slider">
+
+&ltinput type="range" min="1" max="100" value="50" class="min-slider" disabled>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>
