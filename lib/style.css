@@ -1,0 +1,232 @@
+@keyframes min-btn-loadanim{
+    0% {background-color: rgb(45, 45, 45);}
+    50% {background-color: rgb(75, 75, 75);}
+    100% {background-color: rgb(45, 45, 45);}
+}
+
+.min-btn{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(45, 45, 45);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0)
+}
+.min-btn:hover{
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(65, 65, 65);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 100ms;
+    border: 1px solid rgb(159, 159, 159);
+}
+.min-btn:active{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(75, 75, 75);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid rgb(177, 177, 177);
+}
+.min-disabled{
+    background-color: rgb(28, 28, 28);
+}
+.min-disabled:hover{
+    background-color: rgb(28, 28, 28);
+    border: 1px solid rgba(0, 0, 0, 0)
+}
+.min-success{
+    background-color: rgb(8, 127, 8);
+}
+.min-success:hover{
+    background-color: rgb(10, 153, 10);
+    border: 1px solid rgb(16, 222, 16);
+}
+.min-success:active{
+    background-color: rgb(11, 162, 11);
+    border: 1px solid rgb(16, 255, 16);
+}
+.min-danger{
+    background-color: rgb(127, 8, 8);
+}
+.min-danger:hover{
+    background-color: rgb(153, 10, 10);
+    border: 1px solid rgb(222, 16, 16);
+}
+.min-danger:active{
+    background-color: rgb(162, 11, 11);
+    border: 1px solid rgb(255, 16, 16);
+}
+.min-btn-loading{
+    animation: min-btn-loadanim 3.5s infinite;
+    border: 1px rgba(0, 0, 0, 0) solid !important;
+    cursor: not-allowed !important;
+}
+
+.min-textbox{
+    color: white;
+    background-color: rgb(41, 41, 41);
+    border: none;
+    height: 32px;
+    font-size: 20px;
+    width: 350px;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    border-radius: 5px;
+}
+.min-textbox:hover{
+    color: white;
+    background-color: rgb(56, 56, 56);
+    border: none;
+    height: 32px;
+    font-size: 20px;
+    width: 350px;
+    transition: 300ms;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgb(0, 60, 97) 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+.min-textbox:focus{
+    color: white;
+    background-color: rgb(61, 61, 61);
+    border: none;
+    height: 32px;
+    font-size: 20px;
+    width: 350px;
+    transition: 300ms;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgb(0, 157, 255) 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+.min-textbox:disabled{
+    background-color: rgb(42, 42, 42) !important;
+}
+
+.min-password{
+    color: white;
+    background-color: rgb(41, 41, 41);
+    border: none;
+    height: 32px;
+    font-size: 20px;
+    width: 350px;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    border-radius: 5px;
+}
+.min-password:hover{
+    color: white;
+    background-color: rgb(56, 56, 56);
+    border: none;
+    height: 32px;
+    font-size: 20px;
+    width: 350px;
+    transition: 300ms;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgb(97, 0, 0) 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+.min-password:focus{
+    color: white;
+    background-color: rgb(61, 61, 61);
+    border: none;
+    height: 32px;
+    font-size: 20px;
+    width: 350px;
+    transition: 300ms;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgb(255, 0, 0) 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+.min-password:disabled{
+    background-color: rgb(42, 42, 42) !important;
+}
+
+.min-slider{
+    appearance: none;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    width: 350px;
+}
+.min-slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: rgb(128, 128, 128); /* Green background */
+    cursor: grab; /* Cursor on hover */
+    border-radius: 50px;
+}
+.min-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: rgb(128, 128, 128); /* Green background */
+    cursor: grab; /* Cursor on hover */
+    border-radius: 50px;
+}
+.min-slider::-moz-range-thumb:active {
+    cursor: grabbing;
+    background-color: rgb(255, 255, 255) !important;
+    transition: 0.3s;
+}
+.min-slider::-webkit-slider-thumb:active {
+    cursor: grabbing;
+    background-color: rgb(255, 255, 255) !important;
+    transition: 0.3s;
+}
+.min-slider::-moz-range-thumb:hover {
+    background-color: rgb(160, 160, 160);
+    transition: 0.3s;
+}
+.min-slider::-webkit-slider-thumb:hover {
+    background-color: rgb(160, 160, 160);
+    transition: 0.3s;
+}
+
+.min-slider:disabled{
+    appearance: none;
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    width: 350px;
+}
+.min-slider::-moz-range-thumb:disabled {
+    width: 25px;
+    height: 25px; 
+    background: rgb(72, 72, 72);
+    cursor: grab;
+    border-radius: 50px;
+}
+.min-slider::-webkit-slider-thumb:disabled {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(72, 72, 72);
+    cursor: grab;
+    border-radius: 50px;
+}
+.min-slider::-moz-range-thumb:active:disabled {
+    cursor: grabbing;
+}
+.min-slider::-webkit-slider-thumb:active:disabled {
+    cursor: grabbing;
+}
+
+input[type="radio"]{
+    width: 16px;
+    height: 16px;
+    border: none !important;
+    background-color: rgb(72, 72, 72) !important;
+}
